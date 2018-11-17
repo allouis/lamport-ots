@@ -1,0 +1,23 @@
+{
+  "name": "lamport-ots",
+  "version": "0.0.0",
+  "description": "Lamport one-time signatures",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/allouis/lamport-ots.git"
+  },
+  "keywords": [
+    "lamport",
+    "one-time",
+    "signature",
+    "ots",
+    "cryptography"
+  ],
+  "author": "Fabien O'Carroll <fabien@allou.is>",
+  "license": "GPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/allouis/lamport-ots/issues"
+  },
+  "homepage": "https://github.com/allouis/lamport-ots#readme"
+}
