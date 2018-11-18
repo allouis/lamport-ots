@@ -61,3 +61,7 @@ if (lamportSomeHash.verify(message, signature, publicKey)) {
   // Falsified signature, or tampered message
 }
 ```
+
+## Contributing
+
+Contributions are welcome from *anyone* and _everyone_ and the collaboration model used is the [Collective Code Construction Contract](https://rfc.zeromq.org/spec:42/C4/)
