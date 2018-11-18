@@ -4,6 +4,12 @@ Lamport one-time signature scheme is a simple but effective mechanism for creati
 Any cryptograph hash function can be used to implement the scheme.
 Signatures using large hash functions are understood so far to be "quantum resistant"
 
+## ⚠ Warning ⚠
+
+The lamport one-time signature scheme uses 50% of your **private** key as the signature, this is why they are for one time use only.
+
+Do not use a single private key to sign more than once piece of data.
+
 ## Installation
 
 ### With `npm`
