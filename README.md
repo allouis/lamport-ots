@@ -62,6 +62,46 @@ if (lamportSomeHash.verify(message, signature, publicKey)) {
 }
 ```
 
+## API
+
+### `lamport(hash)`
+
+`hash` must be a function that accepts either a String or a Buffer, and returns a Buffer of fixed length.
+
+Returns a lamport "instance" with the following methods
+
+  - `keys()`
+  - `sign(message, privateKey)`
+  - `verify(message, signature, publicKey)`
+
+#### `lamport(hash).keys`
+
+Returns an Object with a `publicKey` and `privateKey` property.
+
+#### `lamport(hash).sign(message, privateKey)`
+
+`message` must be either a String or a Buffer
+
+`privateKey` should be a privateKey returned from keys that **hasn't** been used before.
+
+Returns a Buffer representing the signature
+
+#### `lamport(hash).verify(message, signature, publicKey`
+
+`message` must be either a String or a Buffer
+
+`signature` must be a Buffer
+
+`publicKey` should be a publicKey returned from `keys()`
+
+Returns a Boolean representing the validity of the signature
+
+#### `lamport.keys`
+#### `lamport.sign`
+#### `lamport.verify`
+
+The module exposes a lamport "instance" created with the sha256 hash function, which you can use directly.
+
 ## Contributing
 
 Contributions are welcome from *anyone* and _everyone_ and the collaboration model used is the [Collective Code Construction Contract](https://rfc.zeromq.org/spec:42/C4/)
