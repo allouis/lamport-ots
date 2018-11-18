@@ -71,3 +71,11 @@ function lamport (hash) {
 }
 
 exports = module.exports = lamport
+
+const sha256 = msg => crypto.createHash('sha256').update(msg).digest()
+
+const lamportSHA256 = lamport(sha256)
+
+exports.keys = lamportSHA256.keys
+exports.sign = lamportSHA256.sign
+exports.verify = lamportSHA256.verify
