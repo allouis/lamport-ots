@@ -3,6 +3,11 @@
   "version": "0.0.0",
   "description": "Lamport one-time signatures",
   "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "pretest": "npm run lint",
+    "test": "standard && node test.js | faucet"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/allouis/lamport-ots.git"
